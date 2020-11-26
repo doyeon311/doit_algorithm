@@ -18,7 +18,7 @@ q = FixedQueue(64) # 최대 64개를 enqueue할 수 있는 큐
 while True:
     print(f'현재 데이터 개수: {len(q)} / {q.capacity}')
     menu = select_menu() # 메뉴 선택
-
+    # print(f'test {Menu.enqueue} menu {menu} {type(menu)}')
     if menu == Menu.enqueue: # enqueue
         x = int(input('인큐할 데이터를 입력하세요: '))
         try:
